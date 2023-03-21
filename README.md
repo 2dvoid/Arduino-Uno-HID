@@ -11,6 +11,7 @@ To restore the Arduino to its original state and regain its full functionality, 
 
 # Changing Firmware
 
+
 ### Download firmware files:
-[Keyboard Firmware](Firmware/Arduino-keyboard-0.3.hex)
+[Keyboard Firmware](Firmware/Arduino-keyboard-0.3.hex) </br>
 [Stock Firmware](Firmware/Arduino-usbserial-atmega16u2-Uno-Rev3.hex)
