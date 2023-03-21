@@ -29,6 +29,9 @@ On Arch Linux:
 
 
 ### Flashing Firmware:
-```sudo dfu-programmer atmega16u2 erase```   
-```sudo dfu-programmer atmega16u2 flash "firmware-file.hex"```    
+```sudo dfu-programmer atmega16u2 erase```  
+    
+```sudo dfu-programmer atmega16u2 flash "firmware-file.hex"``` 
+      
 ```sudo dfu-programmer atmega16u2 reset```   
+   
