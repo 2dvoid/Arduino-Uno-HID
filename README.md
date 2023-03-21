@@ -22,3 +22,13 @@ To restore the Arduino to its original state and regain its full functionality, 
     
 On Arch Linux:   
 ```pacman -S dfu-programmer dfu-util```
+
+
+### Set Arduino to DFU Mode:
+[Follow the official guide](https://support.arduino.cc/hc/en-us/articles/4410804625682-Set-a-board-to-DFU-mode)
+
+
+### Flashing Firmware:
+```sudo dfu-programmer atmega16u2 erase```   
+```sudo dfu-programmer atmega16u2 flash "firmware-file.hex"```    
+```sudo dfu-programmer atmega16u2 reset```   
