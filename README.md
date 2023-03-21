@@ -28,7 +28,7 @@ On Arch Linux:
 [Follow the official guide](https://support.arduino.cc/hc/en-us/articles/4410804625682-Set-a-board-to-DFU-mode)
 
 
-### Flashing Firmware:
+### Flash the Firmware:
 ```sudo dfu-programmer atmega16u2 erase```  
     
 ```sudo dfu-programmer atmega16u2 flash "firmware-file.hex"``` 
