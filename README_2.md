@@ -47,7 +47,7 @@ To flash the custom firmware onto the ATmega16U2 chip, follow these steps:
 ```sudo dfu-programmer atmega16u2 reset```   
 
 
-This will cause the ATmega16U2 chip to restart with the new firmware.
+   This will cause the ATmega16U2 chip to restart with the new firmware.
 
 To restore the Arduino Uno to its original state and regain its full functionality, simply repeat the above steps, but flash the stock firmware file instead of the custom firmware file.
 
