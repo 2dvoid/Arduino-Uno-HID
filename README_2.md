@@ -41,7 +41,7 @@ To flash the custom firmware onto the ATmega16U2 chip, follow these steps:
 4. Flash the custom firmware onto the ATmega16U2 chip by running the following command:
 ```sudo dfu-programmer atmega16u2 flash "keyboard-firmware.hex"```   
 
-Replace `keyboard-firmware.hex` with the actual name of the custom firmware file.
+   Replace `keyboard-firmware.hex` with the actual name of the custom firmware file.
 
 5. Reset the Arduino Uno by running the following command:
 ```sudo dfu-programmer atmega16u2 reset```   
