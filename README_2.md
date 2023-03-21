@@ -50,6 +50,7 @@ To flash the custom firmware onto the ATmega16U2 chip, follow these steps:
    This will cause the ATmega16U2 chip to restart with the new firmware.
 
 6. Unplug and replug the board.
+   
    Now it should be connected to computer as a USB keyboard.
 
 To restore the Arduino Uno to its original state and regain its full functionality, simply repeat the above steps, but flash the stock firmware file instead of the custom firmware file.
