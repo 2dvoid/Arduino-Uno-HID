@@ -12,6 +12,13 @@ To restore the Arduino to its original state and regain its full functionality, 
 # Changing Firmware
 
 
-### Download firmware files:
-[Keyboard Firmware](Firmware/Arduino-keyboard-0.3.hex) </br>
+### Download Firmware Files:
+[Keyboard Firmware](Firmware/Arduino-keyboard-0.3.hex)   
 [Stock Firmware](Firmware/Arduino-usbserial-atmega16u2-Uno-Rev3.hex)
+
+
+### Install Flashing Tool:
+[Dfu-programmer](https://github.com/dfu-programmer/dfu-programmer)   
+    
+On Arch Linux:   
+```pacman -S dfu-programmer dfu-util```
