@@ -7,3 +7,9 @@ We will be replacing the stock firmware on the Atmega16U2 chip with a custom fir
 
 It's important to note that flashing any firmware other than the stock firmware will lead to the loss of USB serial functionality and the board will no longer be programmable.  
 To restore the Arduino to its original state and regain its full functionality, simply flash the stock firmware onto the Board.
+
+
+# Changing Firmware
+
+### Download firmware files:
+[Keyboard Firmware](Firmware/Arduino-keyboard-0.3.hex)
