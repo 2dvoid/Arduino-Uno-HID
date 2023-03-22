@@ -1,11 +1,10 @@
 # Arduino Uno HID Keyboard
 
 
-Unlike some other microcontrollers, the Arduino Uno does not natively support keystroke functionality. However, with a bit of tinkering, it is possible to enable this feature. The Arduino Uno board features a USB-to-serial converter, which by default acts as a USB serial device. However, with a firmware update, this converter can be made to act as a USB keyboard.
+Unlike some other microcontrollers, the Arduino Uno does not natively support keystroke functionality. However, with a bit of tinkering, it is possible to enable this feature. The Arduino Uno board features a USB-to-serial converter (ATmega16U2), which by default acts as a USB serial device. However, with a firmware update, this converter can be made to act as a USB keyboard.
 
-The Arduino Uno is a microcontroller board based on the Atmel AVR microcontroller. It comes with an ATmega16U2 chip that functions as a USB-to-serial converter, enabling the board to communicate with a computer over USB. By default, the ATmega16U2 chip is programmed with firmware that allows it to act as a USB device, appearing as a virtual serial port on the computer.
-
-The stock firmware on the ATmega16U2 chip can be replaced with custom firmware that allows the Arduino Uno to function as a USB keyboard. This enables the board to send keystrokes to a computer, just like a regular keyboard. 
+To accomplish this, you can upload custom firmware onto the ATmega16U2 microcontroller. This new firmware replaces the default USB-to-serial firmware and allows the ATmega16U2 to send keystrokes and other input directly to your computer, just like a regular USB keyboard.
+ 
 
 **Important note:** Flashing any firmware other than the stock one will lead to the loss of USB serial functionality and the board will no longer be programmable. So you should first upload your code to the board and then change the firmware. If you need to update or change your code later on, you will have to reflash the stock firmware and then upload the new code. Once you have uploaded the new code, you can proceed to flash the keyboard firmware again, if needed.
 
