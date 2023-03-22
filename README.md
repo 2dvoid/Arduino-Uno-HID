@@ -32,29 +32,35 @@ On other OS, you can download dfu-programmer from its [GitHub repository](https:
 
 ### Setting the Arduino Uno to DFU Mode
 
-To flash the custom firmware onto the ATmega16U2 chip, you'll need to put the Arduino Uno into Device Firmware Update (DFU) mode. Follow the official [Arduino guide](https://support.arduino.cc/hc/en-us/articles/4410804625682-Set-a-board-to-DFU-mode) to do this.
+To flash any custom firmware onto the ATmega16U2 chip, you'll need to put the Arduino Uno into Device Firmware Update (DFU) mode. Follow the official [Arduino guide](https://support.arduino.cc/hc/en-us/articles/4410804625682-Set-a-board-to-DFU-mode) to do this.
 
 
 ### Flashing the Firmware
 
-To flash the custom firmware onto the ATmega16U2 chip, follow these steps:   
+To flash the keyboard firmware onto the ATmega16U2 chip, follow these steps:   
 
-1. Connect the Arduino Uno to your computer via USB and [set it to DFU mode](#setting-the-arduino-uno-to-dfu-mode).
+1. Connect the Arduino Uno board to your computer via USB and [set it to DFU mode](#setting-the-arduino-uno-to-dfu-mode).
+
 2. Open a terminal window and navigate to the directory where the firmware files are located.
-3. Erase the ATmega16U2 chip by running the following command:   
+
+3. Check if the board is in DFU mode:
+```sudo dfu-programmer atmega16u2 read```
+   If it outputs some binary, then everything is okay.
+   
+4. Erase the ATmega16U2 chip by running the following command:   
 ```sudo dfu-programmer atmega16u2 erase```   
 
-4. Flash the keyboard firmware onto the ATmega16U2 chip by running the following command:   
+5. Flash the keyboard firmware onto the ATmega16U2 chip by running the following command:   
 ```sudo dfu-programmer atmega16u2 flash "keyboard-firmware.hex"```   
 
    Replace `keyboard-firmware.hex` with the actual name of the keyboard firmware file.
 
-5. Reset the Arduino Uno by running the following command:   
+6. Reset the Arduino Uno by running the following command:   
 ```sudo dfu-programmer atmega16u2 reset```   
 
    This will cause the ATmega16U2 chip to restart with the new firmware.
 
-6. Unplug and replug the board.
+7. Unplug and replug the board.
    
    Now it should get connected to computer as a USB keyboard.
 
