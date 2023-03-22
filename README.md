@@ -1,5 +1,8 @@
 # Arduino Uno HID Keyboard
 
+
+Unlike some other microcontrollers, the Arduino Uno does not natively support keystroke functionality. However, with a bit of tinkering, it is possible to enable this feature. The Arduino Uno board features a USB-to-serial converter, which by default acts as a USB serial device. However, with a firmware update, this converter can be made to act as a USB keyboard.
+
 The Arduino Uno is a microcontroller board based on the Atmel AVR microcontroller. It comes with an ATmega16U2 chip that functions as a USB-to-serial converter, enabling the board to communicate with a computer over USB. By default, the ATmega16U2 chip is programmed with firmware that allows it to act as a USB device, appearing as a virtual serial port on the computer.
 
 The stock firmware on the ATmega16U2 chip can be replaced with custom firmware that allows the Arduino Uno to function as a USB keyboard. This enables the board to send keystrokes to a computer, just like a regular keyboard. 
