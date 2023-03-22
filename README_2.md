@@ -20,6 +20,7 @@ Before starting, you'll need the following:
 ### Installing dfu-programmer
 
 dfu-programmer is a command-line tool for programming Atmel AVR microcontrollers.  
+   
 To install it on Arch Linux run the following command:   
 ```sudo pacman -S dfu-programmer dfu-util```   
 
@@ -35,7 +36,7 @@ To flash the custom firmware onto the ATmega16U2 chip, you'll need to put the Ar
 
 To flash the custom firmware onto the ATmega16U2 chip, follow these steps:   
 
-1. Connect the Arduino Uno to your computer via USB and set it to DFU mode.
+1. Connect the Arduino Uno to your computer via USB and [set it to DFU mode](#setting-the-arduino-uno-to-dfu-mode).
 2. Open a terminal window and navigate to the directory where the firmware files are located.
 3. Erase the ATmega16U2 chip by running the following command:   
 ```sudo dfu-programmer atmega16u2 erase```   
