@@ -4,7 +4,7 @@ The Arduino Uno is a microcontroller board based on the Atmel AVR microcontrolle
 
 The stock firmware on the ATmega16U2 chip can be replaced with custom firmware that allows the Arduino Uno to function as a USB keyboard. This enables the board to send keystrokes to a computer, just like a regular keyboard. 
 
-**Important note:** Flashing any firmware other than the stock firmware will lead to the loss of USB serial functionality and the board will no longer be programmable. To restore the Arduino Uno to its original state and regain its full functionality, simply flash the stock firmware back onto the board.
+**Important note:** Flashing any firmware other than the stock firmware will lead to the loss of USB serial functionality and the board will no longer be programmable. So first you have to upload your code to the board and then change the firmware. If you need to update or change the code you will have to flash stock firmware then upload new code and then again flash keyboard firmware.
 
 ## Getting Started
 
@@ -41,10 +41,10 @@ To flash the custom firmware onto the ATmega16U2 chip, follow these steps:
 3. Erase the ATmega16U2 chip by running the following command:   
 ```sudo dfu-programmer atmega16u2 erase```   
 
-4. Flash the custom firmware onto the ATmega16U2 chip by running the following command:   
+4. Flash the keyboard firmware onto the ATmega16U2 chip by running the following command:   
 ```sudo dfu-programmer atmega16u2 flash "keyboard-firmware.hex"```   
 
-   Replace `keyboard-firmware.hex` with the actual name of the custom firmware file.
+   Replace `keyboard-firmware.hex` with the actual name of the keyboard firmware file.
 
 5. Reset the Arduino Uno by running the following command:   
 ```sudo dfu-programmer atmega16u2 reset```   
