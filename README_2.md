@@ -14,7 +14,7 @@ Before starting, you'll need the following:
 
 - An Arduino Uno board
 - A computer running Windows, macOS, or Linux
-- The custom firmware and stock firmware files
+- The [Keyboard Firmware](Firmware/Arduino-keyboard-0.3.hex) and [Stock Firmware](Firmware/Arduino-usbserial-atmega16u2-Uno-Rev3.hex) files
 - The dfu-programmer tool
 
 ### Installing dfu-programmer
