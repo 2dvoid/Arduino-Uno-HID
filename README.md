@@ -46,7 +46,7 @@ To flash the keyboard firmware onto the ATmega16U2 chip, follow these steps:
 3. Verify if the board is in DFU mode:   
 ```sudo dfu-programmer atmega16u2 read```   
 
-   If you get a long binary output, then everything is okay.
+   If you receive a lengthy binary output, that indicates the board is in DFU mode.
    
 4. Erase the ATmega16U2 chip by running the following command:   
 ```sudo dfu-programmer atmega16u2 erase```   
