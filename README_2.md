@@ -4,7 +4,8 @@ The Arduino Uno is a microcontroller board based on the Atmel AVR microcontrolle
 
 The stock firmware on the ATmega16U2 chip can be replaced with custom firmware that allows the Arduino Uno to function as a USB keyboard. This enables the board to send keystrokes to a computer, just like a regular keyboard. 
 
-**Important note:** Flashing any firmware other than the stock firmware will lead to the loss of USB serial functionality and the board will no longer be programmable. So first you have to upload your code to the board and then change the firmware. If you need to update or change the code you will have to flash stock firmware then upload new code and then again flash keyboard firmware.
+**Important note:** Flashing any firmware other than the stock one will lead to the loss of USB serial functionality and the board will no longer be programmable. So you should first upload your code to the board and then change the firmware. If you need to update or change your code later on, you will have to reflash the stock firmware and then upload the new code. Once you have uploaded the new code, you can proceed to flash the keyboard firmware again, if needed.
+
 
 ## Getting Started
 
