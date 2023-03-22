@@ -19,10 +19,11 @@ Before starting, you'll need the following:
 
 ### Installing dfu-programmer
 
-dfu-programmer is a command-line tool for programming Atmel AVR microcontrollers. To install it on Arch Linux run the following command:   
+dfu-programmer is a command-line tool for programming Atmel AVR microcontrollers.  
+To install it on Arch Linux run the following command:   
 ```sudo pacman -S dfu-programmer dfu-util```   
 
-On Windows or macOS, you can download dfu-programmer from its [GitHub repository](https://github.com/dfu-programmer/dfu-programmer).
+On other OS, you can download dfu-programmer from its [GitHub repository](https://github.com/dfu-programmer/dfu-programmer).
 
 
 ### Setting the Arduino Uno to DFU Mode
